@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Athavan Thambimuthu's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="aboutstyle.css">
+        <link rel="stylesheet" type="text/css" href="loadingstyle.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <div id= "loading">
+        <div class="box">
+            <img src="prof.jpg" alt="ArtyLogo">
+        </div>
+        <div id="AthavanThambimuthu">
+            <p style="font-family:Avantgarde,Tex Gyre Adventor, URW Gothic L, sans-serif; font-size:5rem"><strong>Athavan Thambimuthu</strong></p>
+        </div> 
+        <script>
+            setTimeout(Appearblock, 6000);
+            function Appearblock(){
+                document.getElementById("AthavanThambimuthu").style.display = "block";   
+            }   
+        </script>
+        </div>
+        <div id="about">
+            <div class="navigation-wrapper">
+                <div class="navigation-button">
+                    <img src="Portfolioimages/images.png" style= "width:70%;height:70%">
+                </div>
+                <div class="navigation-menu">
+                    <ul>
+                      <li><a href="index.html">ABOUT</a></li>
+                      <li><a href="Work.html">EXPERIENCES</a></li>
+                      <li><a href="Contact.html">CONTACT</a></li>
+                  </ul>
+                </div>
+              </div>
+    <div class = "fadein">
+        <img src="prof.jpg" id ="ArtyLogo">
+    </div>
+    
+
+    <div class="main">
+        <h2 style= "font-family:Avantgarde,Tex Gyre Adventor, URW Gothic L, sans-serif; font-size:35px;margin:0 0 0 0;">Hey, I'm <span style="color : rgb(43, 164, 114);"> Athavan Thambimuthu.</span></h2>
+        <p style= "font-family:Avantgarde,Tex Gyre Adventor, URW Gothic L, sans-serif; font-size:20px"> I am a <span style="color : rgb(43, 164, 114);">Computer Engineer</span> Student @ McGill University.</p>
+        <a href="Portfolioimages/2022_AT_CV.pdf" download="AthavanThambimuthuCV_2020">
+         <button type="button" class="btn-outline-light">Download My Resume!</button>
+        </a>
+        <a href="https://www.linkedin.com/in/athavan-thambimuthu-a811311a5/">
+         <button type="button" class="linkedin" style="margin-top:5px">Linkedin</button>
+        </a>
+    </div>
+
+    <div class="mainimage">
+        <img src="Portfolioimages/My project.png" id="collage">
+    </div>
+
+    
+    <script>
+    var navButton = document.querySelector('.navigation-button');
+    var navMenu = document.querySelector('.navigation-menu');
+    var win = window;
+    
+    function openMenu(event) {
+      
+      navButton.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    }
+      
+    function closeMenu(event) {
+      if (navButton.classList.contains('active')) {
+        navButton.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    }
+      navButton.addEventListener('click', openMenu, false);
+    
+    win.addEventListener('click',closeMenu, false);
+        
+    </script>
+     <script>
+        setTimeout(Appearblock2, 10500);
+        function Appearblock2(){
+            document.getElementById("about").style.display = "block"; 
+            document.getElementById("loading").style.display= "none";
+        }   
+    </script>
+
+    </body>
+</html>

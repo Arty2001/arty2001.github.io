@@ -1,0 +1,283 @@
+
+#about{
+    display:none;
+}
+
+#about {
+    width: 80%;
+    position: relative;
+    top: 40px;
+    margin: 0 auto;
+  }
+
+.navigation-wrapper {
+    position: relative;
+  }
+  .navigation-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1;
+    top: 8%;
+    right: 12%;
+    background: rgb(43, 164, 114);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    animation: opening 3s
+  }
+   
+  
+  .navigation-menu ul li {
+    list-style: none;
+    font-family: impact;
+    font-weight: 300;
+    color: rgb(43, 164, 114);
+  }
+  
+  .navigation-menu {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background: rgb(43, 164, 114);
+    height: 100%;
+    transform: skewX(0deg) translate(100%,0);
+    transform-origin: top right;
+    transition: all .2s ease-in;
+    z-index: 1;
+  }
+  .navigation-menu ul {
+    transform: skewX(-8deg);
+    transform-origin: top left;
+    position: fixed;
+    right: 120px;
+    top: 120px;
+    width: 400px;
+    text-align: right;
+  
+  }
+  .navigation-menu ul li {
+    position: relative;
+      z-index: 999;
+    font-size: 32px;
+    color: hsl(0,0%,10%);
+    line-height: 64px;
+  }
+  .navigation-menu ul li  a {
+    border: none;
+    color: hsl(0,0%,10%);
+    text-decoration: none;
+  }
+  .navigation-menu.active {
+    transform: skewX(8deg) translate(0,0);
+      
+  }
+  
+  .navigation-menu li {
+    opacity: 0;
+    transform: translate(0, 10px);
+    transition: all .0s ease-in .3s;
+    
+  }
+  .navigation-menu.active li {
+    opacity: 1;
+    transform: translate(0,0);
+    transition: all 0.2s ease-in 0s;
+  }
+  .navigation-menu.active li:nth-child(1) {
+    transition-delay: .3s;
+  }
+  .navigation-menu.active li:nth-child(2) {
+    transition-delay: .4s;
+  }
+  .navigation-menu.active li:nth-child(3) {
+    transition-delay: .5s;
+  }
+  .navigation-menu.active li:nth-child(4) {
+    transition-delay: .6s;
+  }
+  .navigation-menu.active li:nth-child(5) {
+    transition-delay: .7s;
+  }
+  .navigation-menu.active li:nth-child(6) {
+    transition-delay: .8s;
+  }
+  .navigation-menu.active li:hover{
+      font-size:40px;
+  }
+
+body{
+    background: rgb(240, 217, 175);
+}
+
+#ArtyLogo{
+    top: 8%;
+    left:12%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    width: auto;
+}
+
+#whoami{
+    display:block;
+    background:rgb(43, 164, 114);
+    color: black;;
+    padding:7px;
+    margin: 7% 0px 0px 0px;
+    width:625px;
+    height:240px;
+    float:left;
+    transition: 2s ease; 
+}
+
+#whoami:hover{
+    width : 800px;
+}
+#Picture{
+    width: 230px;
+    height: 230px;
+    border: 5px solid rgb(43, 164, 114);
+    float:right;
+}
+
+
+#whatamidoingrn{
+    display:block;
+    background:rgb(43, 164, 114);
+    color: black;;
+    padding:7px;
+    margin: 7% 0px 0px 0px;
+    width:625px;
+    height:240px;
+    float:right;
+    transition: 2s ease; 
+}
+
+#whatamidoingrn:hover{
+    width : 800px;
+}
+#GradPicture{
+    width: 230px;
+    height: 230px;
+    border: 5px solid rgb(43, 164, 114);
+    float:left;
+}
+
+#whataremyhobbies{
+  display:block;
+  background:rgb(43, 164, 114);
+  color: black;;
+  padding:7px;
+  margin: 7% 0px 0px 0px;
+  width:625px;
+  height:240px;
+  float:left;
+  transition: 2s ease; 
+}
+
+#whataremyhobbies:hover{
+  width : 800px;
+}
+
+#BallPicture{
+  width: 350px;
+  height: 230px;
+  border: 5px solid rgb(43, 164, 114);
+  float:right;
+}
+
+
+.collage{
+  width:50%;
+  height:50%
+}
+.main{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:90vh;
+  width:50%;
+  flex-direction: column;
+  float:left;
+  animation: openingblocks 1s;
+}
+
+.btn-outline-light {
+    border-style: solid ;
+    border-radius: 4px;
+    border-color: black;
+    padding: 5px;
+    font-size:18px;
+    background-color: rgb(43, 164, 114) !important;
+    color: black(255, 255, 255) !important;
+}
+
+.btn-outline-light:hover{
+  border-radius:8px;
+}
+
+.linkedin{
+  border-style: solid ;
+  border-radius: 4px;
+  border-color: white;
+  padding: 5px;
+  font-size:16px;
+  background-color: #0077b5 !important;
+  color:white !important;
+}
+.linkedin:hover{
+  border-radius:8px;
+}
+.mainimage{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  width:50%;
+  float:right;
+  animation: openingblocks 1s;
+}
+
+.headings{
+  margin:0px 0px 0px 0px;
+}
+
+.fadeinblock {
+  opacity: 1;
+  animation: openingblocks 1s;
+}
+
+.fadein{
+  animation: opening 1s
+}
+
+@keyframes opening{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes openingblocks{
+  0%{
+    opacity:0;
+    width:30%;
+  }
+  100%{
+    opacity:1
+    width:50%;
+  }
+}
